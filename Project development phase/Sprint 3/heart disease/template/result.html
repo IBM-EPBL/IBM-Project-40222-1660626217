@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Heart Disease Prediction</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://kit.fontawesome.com/5c42f5ff23.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Heart Disease Prediction</span></h2>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1><span class='danger'>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspOops! You have chances of Heart Disease.</span></h1>
+				
+			{% elif prediction==0 %}
+				<h1><span class='safe'>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspGreat! You DON'T have chances Heart Disease.</span></h1>
+				
+			{% endif %}
+		</div>
+
+
+	</body>
+</html>
