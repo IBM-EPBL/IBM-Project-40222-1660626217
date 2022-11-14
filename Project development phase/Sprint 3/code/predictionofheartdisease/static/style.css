@@ -1,0 +1,134 @@
+tml{
+	height: 100%;
+	margin: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+	height: 100%;
+    min-height: 500px;
+	display: flex;
+    background: url(https://papers.co/wallpaper/papers.co-sk61-dark-purple-blur-gradation-29-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	flex-direction: column;
+}
+
+/* Website Title */
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+	position:relative;
+	overflow: hidden;
+    background: url(https://papers.co/wallpaper/papers.co-sk61-dark-purple-blur-gradation-29-wallpaper.jpg);
+	background-size: 500% 500%;
+}
+
+
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #ffffff;
+	font-family: 'Jost', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+
+/* Text Area */
+.ml-container{
+    margin: 30px 0;
+	flex: 1 0 auto;
+
+}
+
+.form {
+	text-align: center;
+	width: 250px;
+	height: 25px;
+	margin-bottom: 5px;
+	
+}
+
+input[type=text], select{
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background:#e0dede;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+	display: inline block;
+	width: 300px;
+	font-weight: bold;
+    font-family: 'Jost', sans-serif;
+    color: #fff ;
+	text-align: center;
+	float: left;
+		
+  }
+
+/* Predict Button */
+.my-cta-button{
+   	border: none;
+    border-radius:  5px;
+	margin-top: 10px;
+    padding: 10px 36px;
+    color: #fff;
+    background: #573b8a;
+    font-size: 1em;
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+
+.my-cta-button:hover{
+    background: #6d44b8;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+/* Result */
+.results{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+	height: 100%;
+    min-height: 500px;
+	display: flex;
+    background: url(https://papers.co/wallpaper/papers.co-sk61-dark-purple-blur-gradation-29-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	flex-direction: column;
+    padding: 30px 0 0;
+	flex: 1 0 auto;
+}
+
+.danger{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #D8B9C3;
+}
+
+.safe{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #D8B9C3;
+}
+
