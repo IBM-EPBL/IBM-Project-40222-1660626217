@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{font-family: 'Jost', sans-serif; color:#333; font-size:14px; align-items:center; justify-content: center; background-image: url("dark purple blur.jpg"); padding:100px;}
+.form_box{width:1120px; padding:10px;  background-color:white;}
+
+input{padding:5px;  margin-bottom:5px;}
+input[type="submit"]{font-family: 'Jost', sans-serif; border:none; outline:none; background-color:#573b8a; color:white; font-size: 1em;}
+.heading{background-color: #573b8a; color:white; height:40px; width:100%; line-height:40px; text-align:center; font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;}
+.shadow{
+  -webkit-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.43);
+-moz-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.43);
+box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.43);}
+.pic{text-align:left; width:33%; float:left;}
+
+</style>
+
+<body>
+ <div class="form_box shadow">
+ <form method="post" action="practice_ac.php">
+ <div class="heading">
+   Feedback Form
+ </div>
+ <br/>
+ <p style="font-family: 'Jost', sans-serif; font-weight:bold; font-size:16px;">What do you think about the quality of our website?</p>
+ <div>
+   <div class="pic">
+     <img src="bad.jpeg" alt="" width="100" height="100"> <br/>
+     <input type="radio" name="quality" value="0"> Bad
+   </div>
+   <div class="pic">
+     <img src="neutral.jpeg" alt="" width="100" height="100"> <br/>
+     <input type="radio" name="quality" value="1"> Okay
+   </div>
+   <div class="pic">
+     <img src="good.jpeg" alt="" width="100" height="100"> <br/>
+     <input type="radio" name="quality" value="2"> Good
+   </div>
+
+ </div>
+</br>
+ <p style="font-family: 'Jost', sans-serif; font-weight:bold; font-size:16px;">Do you have any suggestion for us? </p>
+ <textarea name=" suggestion" rows="8" cols="135"></textarea>
+  <input type="submit" name="submit" value="Submit Form">
+</form>
+ </div>
+</body>
+</html>
