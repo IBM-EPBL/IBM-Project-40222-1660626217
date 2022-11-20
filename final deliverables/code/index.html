@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="web app for predicting heart disease">
+    <meta name="author" content="rishwana,sasmitha,soundharya,shiny ">
+    <meta name="keywords" content="data analysis,visualizartion,heart disease prediction,web app">
+    <title>visualizing and predicting heart disease with an interactive dashboard</title>
+    <script src="https://kit.fontawesome.com/5c42f5ff23.js" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="My Project 70498.apps.googleusercontent.com">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form action="signup.php" method="POST">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="txt" placeholder="User name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button type="submit" name="signup" class="btn btn-default">Signup</buttons>
+            </form>
+        </div>
+        <div class="login">
+            <form action="login.php" method="POST">
+                <?php if (isset($_GET['error'])) { ?>
+
+                <p class="error"> <?php echo $_GET['error']; ?></p> 
+                <?php } ?>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Login</button>
+                <a href="forgot-password.php" class="link forget-pass text-left">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp
+                    &nbsp &nbspForgot Your Password?</a>
+                <p class="social-text">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspOr
+                    sign in with social media</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        &nbsp<i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        &nbsp<i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        &nbsp<i class="fab fa-google"></i>
+                    </a>
+                </div>
+                <br />
+        </div>
+
+</body>
+
+</html>
